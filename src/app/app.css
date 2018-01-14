@@ -1,0 +1,32 @@
+footer {
+	width: 400px;	
+	display: block;
+	margin:0 auto;
+	display: flex;
+    justify-content: center;
+}
+
+footer p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #27397e;
+    text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fdbf0c;
+}
+
+footer a:hover { 
+	text-decoration: underline; 
+}
+
+nav {
+	margin-top: 60px;
+}
+
+li {
+	list-style: none;	
+}
+

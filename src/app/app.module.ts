@@ -1,18 +1,29 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
+import { AppComponent }  from './app.component';
+import { HeaderModule } from './header.module';
+import { SearchModule } from './search.module';
+import { PokemonCardModule } from './pokemon-card.module';
+import { BuscarPokemonService } from './services/BuscarPokemon.service';
 
-import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+      BrowserModule,
+      HeaderModule,
+      SearchModule,
+      PokemonCardModule,
+      HttpModule
+    ],
+  declarations: [ AppComponent ],
+  providers: [
+    BuscarPokemonService
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
+
+

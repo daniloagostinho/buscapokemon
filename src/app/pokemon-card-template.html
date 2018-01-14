@@ -1,0 +1,27 @@
+<div class="cards-pokemon">
+  <img
+  opt-imagem
+    [borda]="'1px solid #fff'"
+    src="{{pokemon.sprites.back_default}}"
+    alt="Sprite de {{ pokemon.name }}">
+
+  <section>
+
+    <div class="label"><h3>{{pokemon.name}}</h3></div>
+    <div class="label">{{pokemon.id}}</div>
+    <div class="label">{{pokemon.base_experience}}</div>
+
+    <div *ngIf="premiado(pokemon.name)">
+      <section id="twelve-point-star"></section>
+    </div>
+  </section>
+
+  <h4>Movimentos</h4>
+  <ul>
+    <li *ngFor="let item of pokemon.moves">
+      {{ item.move.name }}
+    </li>
+  </ul>
+</div>
+
+

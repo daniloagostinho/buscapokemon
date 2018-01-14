@@ -1,0 +1,21 @@
+section {
+	max-width: 900px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+h2 {
+	text-align: center;
+	position: relative;
+    top: 20px;	
+	font-size: 16px;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+.logo {
+	max-width: 300px;
+	display: block;
+	margin: auto;
+}

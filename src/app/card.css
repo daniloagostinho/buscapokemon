@@ -1,0 +1,124 @@
+.cards-pokemon {
+	position: relative;
+  border: 2px solid #1e275b;
+
+	top: 100px;
+
+	margin: 0 auto;
+	width: 600px;
+	padding: 10px;
+
+  margin-bottom: 100px;
+}
+
+.cards-pokemon h3, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cards-pokemon  p {
+  max-width: 500px;
+}
+
+img {
+	float: left;
+	width: 25%;
+}
+
+.label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 90px;
+  height: 31px;
+  border: 2px solid #1e275b;
+  bottom: 50px;
+  float: left;
+  margin: 5px;
+  margin-left: 49px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 0 10px 0 0;
+}
+
+.label:nth-child(1):before {
+  content: 'Nome';
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  background: chocolate;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.label:nth-child(2):before {
+  content: 'ID';
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  background: chocolate;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.label:nth-child(3):before {
+  content: 'Experiência';
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  background: chocolate;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+#twelve-point-star {
+   height: 100px;
+   width: 100px;
+   background: #FF0033;
+   position: absolute;
+   right: 0;
+
+}
+#twelve-point-star:before {
+   height: 100px;
+   width: 100px;
+   background: #FF0033;
+   content:"Premiado!!";
+   font-weight: bold;
+   font-size: 20px;
+   z-index: 9999;
+   position: absolute;
+   /* Rotação */
+   -moz-transform: rotate(30deg);
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+   -o-transform: rotate(30deg);
+   transform: rotate(30deg);
+
+}
+#twelve-point-star:after {
+   height: 100px;
+   width: 100px;
+   background: #FF0033;
+   content:"";
+   position: absolute;
+   /* Rotação */
+   -moz-transform: rotate(-30deg);
+   -webkit-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   -o-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+
+}

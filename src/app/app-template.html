@@ -1,0 +1,20 @@
+<header></header>
+
+<div>
+  <search (clicouEmPesquisar)="pesquisarPokemon($event)"></search>
+</div>
+
+<div *ngIf="isLoading  && clicado" style="text-align: center;">C A R R E G A N D O . . .</div>
+
+<pokemon-card *ngIf="!isLoading && clicado" [pokemon]="pokemonPesquisado"></pokemon-card>
+
+<footer>
+	<nav class="link-footer">
+	<ul>
+		<li><p>Desenvolvido com muito ♥ por <a href="http://github.com/DaniloAgostinho" target="_blank">Danilo Agostinho </a></p></li>
+		<li><p>Mentores do projeto <a href="https://github.com/WendellAdriel" target="_blank">Wendell Adriel</a></p></li>
+		<li><p><a href="https://github.com/cod3rkane" target="_blank">Cod3r Kane</a></p></li>
+	</ul>
+	</nav>
+</footer>
+
