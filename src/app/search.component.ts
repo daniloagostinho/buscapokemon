@@ -1,6 +1,10 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
+import { RealTimeService } from '../real-time.service';
+
+import { Subject } from 'rxjs/Subject';
+
 @Component({
   selector: 'search',
   moduleId: module.id,
@@ -12,10 +16,21 @@ export class SearchComponent {
   formGroup: FormGroup;
 
   @Output() clicouEmPesquisar: EventEmitter<any> = new EventEmitter();
+  @Output() quandoDigitar: EventEmitter<any> = new EventEmitter();
 
-  constructor(private fb: FormBuilder) {
+  results: Object;
+  searchTerm$ = new Subject<string>();
+
+  constructor(
+    private fb: FormBuilder,
+    private realTimeBusca: RealTimeService) {
     this.formGroup = this.fb.group({
       textoPesquisado: ['']
+    });
+
+    this.realTimeBusca.search(this.searchTerm$)
+    .subscribe(results => {
+      this.results = results.results;
     });
   }
 
@@ -25,6 +40,7 @@ export class SearchComponent {
     if ( enterKey == 13 ) {
       console.log('vc digitou ENTER');
       this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
+      this.quandoDigitar.emit(this.textoPesquisadoModel);
     }
 
   }

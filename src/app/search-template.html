@@ -1,12 +1,19 @@
 <main>
 	<div class="center-inputs" [formGroup]="formGroup" novalidate>
-		<input 
-		formControlName="textoPesquisado" 
-		type="search" 
-		placeholder="Pesquise seu Pokemon" 
-		(keyup)="quandoPrecionarEnter($event)"
-		[(ngModel)]="textoPesquisadoModel">
+		<input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
+		 [(ngModel)]="textoPesquisadoModel">
 		<button (click)="quandoClicarPesquisar($event)">Buscar</button>
 	</div>
 </main>
-	
+
+<div class="cards-pokemon">
+	<section>
+	<ul *ngIf="results">
+		<li *ngFor="let result of results | slice:0:9">
+			<a href="{{ result.latest }}" target="_blank">
+				{{ result.name }}
+			</a>
+		</li>
+	</ul>
+	</section>
+</div>
