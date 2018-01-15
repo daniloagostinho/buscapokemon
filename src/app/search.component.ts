@@ -16,7 +16,6 @@ export class SearchComponent {
   formGroup: FormGroup;
 
   @Output() clicouEmPesquisar: EventEmitter<any> = new EventEmitter();
-  @Output() quandoDigitar: EventEmitter<any> = new EventEmitter();
 
   results: Object;
   searchTerm$ = new Subject<string>();
@@ -40,7 +39,6 @@ export class SearchComponent {
     if ( enterKey == 13 ) {
       console.log('vc digitou ENTER');
       this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
-      this.quandoDigitar.emit(this.textoPesquisadoModel);
     }
 
   }
