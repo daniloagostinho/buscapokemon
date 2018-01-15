@@ -19,6 +19,15 @@ export class SearchComponent {
     });
   }
 
+  quandoPrecionarEnter(event) {
+    const enterKey = event.keyCode;
+
+    if ( enterKey == 13 ) {
+      console.log('vc digitou ENTER');
+      this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
+    }
+
+  }
   quandoClicarPesquisar() {
     this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
   }

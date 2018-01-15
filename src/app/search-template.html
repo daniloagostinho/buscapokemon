@@ -1,6 +1,12 @@
 <main>
 	<div class="center-inputs" [formGroup]="formGroup" novalidate>
-	  <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" [(ngModel)]="textoPesquisadoModel">
-	  <button (click)="quandoClicarPesquisar()">Buscar</button>
+		<input 
+		formControlName="textoPesquisado" 
+		type="search" 
+		placeholder="Pesquise seu Pokemon" 
+		(keyup)="quandoPrecionarEnter($event)"
+		[(ngModel)]="textoPesquisadoModel">
+		<button (click)="quandoClicarPesquisar($event)">Buscar</button>
 	</div>
 </main>
+	
