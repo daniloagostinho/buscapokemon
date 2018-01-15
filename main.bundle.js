@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ "../../../../../src/app/app-template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header></header>\r\n\r\n<a href=\"https://github.com/you\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\"></a>\r\n\r\n<div>\r\n  <search (clicouEmPesquisar)=\"pesquisarPokemon($event)\"></search>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center;\">C A R R E G A N D O . . .</div>\r\n\r\n<pokemon-card *ngIf=\"!isLoading && clicado\" [pokemon]=\"pokemonPesquisado\"></pokemon-card>\r\n\r\n<footer>\r\n\t<nav class=\"link-footer\">\r\n\t<ul>\r\n\t\t<li><p>Desenvolvido com muito ♥ por <a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a></p></li>\r\n\t\t<li><p>Mentores do projeto <a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a></p></li>\r\n\t\t<li><p><a href=\"https://github.com/cod3rkane\" target=\"_blank\">Cod3r Kane</a></p></li>\r\n\t</ul>\r\n\t</nav>\r\n</footer>\r\n\r\n"
+module.exports = "<header></header>\r\n\r\n<a href=\"https://github.com/daniloagostinho/buscapokemon\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\"></a>\r\n\r\n<div>\r\n  <search (clicouEmPesquisar)=\"pesquisarPokemon($event)\"></search>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center;\">C A R R E G A N D O . . .</div>\r\n\r\n<pokemon-card *ngIf=\"!isLoading && clicado\" [pokemon]=\"pokemonPesquisado\"></pokemon-card>\r\n\r\n<footer>\r\n\t<nav class=\"link-footer\">\r\n\t<ul>\r\n\t\t<li><p>Desenvolvido com muito ♥ por <a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a></p></li>\r\n\t\t<li><p>Mentores do projeto <a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a></p></li>\r\n\t\t<li><p><a href=\"https://github.com/cod3rkane\" target=\"_blank\">Cod3r Kane</a></p></li>\r\n\t</ul>\r\n\t</nav>\r\n</footer>\r\n\r\n"
 
 /***/ }),
 
@@ -105,12 +105,16 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pokemon_card_module__ = __webpack_require__("../../../../../src/app/pokemon-card.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_BuscarPokemon_service__ = __webpack_require__("../../../../../src/app/services/BuscarPokemon.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__real_time_module__ = __webpack_require__("../../../../../src/app/real-time.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__real_time_service__ = __webpack_require__("../../../../../src/real-time.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -129,16 +133,64 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__header_module__["a" /* HeaderModule */],
                 __WEBPACK_IMPORTED_MODULE_4__search_module__["a" /* SearchModule */],
                 __WEBPACK_IMPORTED_MODULE_5__pokemon_card_module__["a" /* PokemonCardModule */],
-                __WEBPACK_IMPORTED_MODULE_7__angular_http__["b" /* HttpModule */]
+                __WEBPACK_IMPORTED_MODULE_7__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_8__real_time_module__["a" /* RealTimeModule */]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_6__services_BuscarPokemon_service__["a" /* BuscarPokemonService */]
+                __WEBPACK_IMPORTED_MODULE_6__services_BuscarPokemon_service__["a" /* BuscarPokemonService */],
+                __WEBPACK_IMPORTED_MODULE_9__real_time_service__["a" /* RealTimeService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/busca-real-time.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RealTimeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__real_time_service__ = __webpack_require__("../../../../../src/real-time.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var RealTimeComponent = (function () {
+    function RealTimeComponent(searchService) {
+        var _this = this;
+        this.searchService = searchService;
+        this.searchTerm$ = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.searchService.search(this.searchTerm$)
+            .subscribe(function (results) {
+            _this.results = results.results;
+        });
+    }
+    RealTimeComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-real-time',
+            template: __webpack_require__("../../../../../src/app/teample-real-time.html"),
+            styles: [__webpack_require__("../../../../../src/app/footer.css")],
+            providers: [__WEBPACK_IMPORTED_MODULE_2__real_time_service__["a" /* RealTimeService */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__real_time_service__["a" /* RealTimeService */]])
+    ], RealTimeComponent);
+    return RealTimeComponent;
 }());
 
 
@@ -154,6 +206,24 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 // module
 exports.push([module.i, ".cards-pokemon {\r\n\tposition: relative;\r\n  border: 2px solid #1e275b;\r\n\r\n\ttop: 100px;\r\n\r\n\tmargin: 0 auto;\r\n\twidth: 600px;\r\n\tpadding: 10px;\r\n\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.cards-pokemon h3, p {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n}\r\n\r\n.cards-pokemon  p {\r\n  max-width: 500px;\r\n}\r\n\r\nimg {\r\n\tfloat: left;\r\n\twidth: 25%;\r\n}\r\n\r\n.label {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n  position: relative;\r\n  width: 90px;\r\n  height: 31px;\r\n  border: 2px solid #1e275b;\r\n  bottom: 50px;\r\n  float: left;\r\n  margin: 5px;\r\n  margin-left: 49px;\r\n  text-align: center;\r\n  line-height: 2;\r\n  border-radius: 0 10px 0 0;\r\n}\r\n\r\n.label:nth-child(1):before {\r\n  content: 'Nome';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(2):before {\r\n  content: 'ID';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(3):before {\r\n  content: 'Experi\\EAncia';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n#twelve-point-star {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   position: absolute;\r\n   right: 0;\r\n\r\n}\r\n\r\n#twelve-point-star:before {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"Premiado!!\";\r\n   font-weight: bold;\r\n   font-size: 20px;\r\n   z-index: 9999;\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(30deg);\r\n   transform: rotate(30deg);\r\n\r\n}\r\n\r\n#twelve-point-star:after {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"\";\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(-30deg);\r\n   transform: rotate(-30deg);\r\n\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -401,6 +471,40 @@ var PokemonCardModule = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/real-time.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RealTimeModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__busca_real_time_component__ = __webpack_require__("../../../../../src/app/busca-real-time.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var RealTimeModule = (function () {
+    function RealTimeModule() {
+    }
+    RealTimeModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__busca_real_time_component__["a" /* RealTimeComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_2__busca_real_time_component__["a" /* RealTimeComponent */]]
+        })
+    ], RealTimeModule);
+    return RealTimeModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/search-template.html":
 /***/ (function(module, exports) {
 
@@ -560,6 +664,13 @@ var BuscarPokemonService = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/teample-real-time.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>component realtime pra usar futuramente com a api do pokemon</p>\r\n<input\r\n    (keyup)=\"searchTerm$.next($event.target.value)\">\r\n\r\n<ul *ngIf=\"results\">\r\n  <li *ngFor=\"let result of results | slice:0:9\">\r\n    <a href=\"{{ result.latest }}\" target=\"_blank\">\r\n      {{ result.name }}\r\n    </a>\r\n  </li>\r\n</ul>"
+
+/***/ }),
+
 /***/ "../../../../../src/environments/environment.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -594,6 +705,60 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
+
+
+/***/ }),
+
+/***/ "../../../../../src/real-time.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RealTimeService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_switchMap__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/switchMap.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var RealTimeService = (function () {
+    function RealTimeService(http) {
+        this.http = http;
+        this.baseUrl = 'https://api.cdnjs.com/libraries';
+        this.queryUrl = '?search=';
+    }
+    RealTimeService.prototype.search = function (terms) {
+        var _this = this;
+        return terms.debounceTime(400)
+            .distinctUntilChanged()
+            .switchMap(function (term) { return _this.searchEntries(term); });
+    };
+    RealTimeService.prototype.searchEntries = function (term) {
+        return this.http
+            .get(this.baseUrl + this.queryUrl + term)
+            .map(function (res) { return res.json(); });
+    };
+    RealTimeService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], RealTimeService);
+    return RealTimeService;
+}());
+
 
 
 /***/ }),
