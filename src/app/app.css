@@ -1,5 +1,5 @@
 footer {
-	width: 400px;	
+	width: 400px;
 	display: block;
 	margin:0 auto;
 	display: flex;
@@ -18,8 +18,8 @@ footer a {
 	color: #fdbf0c;
 }
 
-footer a:hover { 
-	text-decoration: underline; 
+footer a:hover {
+	text-decoration: underline;
 }
 
 nav {
@@ -27,6 +27,6 @@ nav {
 }
 
 li {
-	list-style: none;	
+	list-style: none;
 }
 

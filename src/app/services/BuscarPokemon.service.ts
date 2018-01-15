@@ -18,7 +18,7 @@ export class BuscarPokemonService {
 
   getPokemon(texto: string): Observable<any> {
     let result = this.http
-      .get(`http://pokeapi.co/api/v2/pokemon/${texto}`);
+      .get(`https://pokeapi.co/api/v2/pokemon/${texto}`);
 
     return result;
   }
