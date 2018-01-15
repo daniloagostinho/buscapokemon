@@ -539,7 +539,7 @@ var BuscarPokemonService = (function () {
     };
     BuscarPokemonService.prototype.getPokemon = function (texto) {
         var result = this.http
-            .get("http://pokeapi.co/api/v2/pokemon/" + texto);
+            .get("https://pokeapi.co/api/v2/pokemon/" + texto);
         return result;
     };
     BuscarPokemonService = __decorate([
