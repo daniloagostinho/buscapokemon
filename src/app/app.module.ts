@@ -8,6 +8,8 @@ import { PokemonCardModule } from './pokemon-card.module';
 import { BuscarPokemonService } from './services/BuscarPokemon.service';
 
 import { HttpModule } from '@angular/http';
+import { RealTimeModule } from './real-time.module';
+import { RealTimeService } from '../real-time.service';
 
 
 @NgModule({
@@ -16,11 +18,13 @@ import { HttpModule } from '@angular/http';
       HeaderModule,
       SearchModule,
       PokemonCardModule,
-      HttpModule
+      HttpModule,
+      RealTimeModule
     ],
   declarations: [ AppComponent ],
   providers: [
-    BuscarPokemonService
+    BuscarPokemonService,
+    RealTimeService
   ],
   bootstrap:    [ AppComponent ]
 })
