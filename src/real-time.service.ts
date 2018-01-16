@@ -8,8 +8,8 @@ import 'rxjs/add/operator/switchMap';
 
 @Injectable()
 export class RealTimeService {
-  baseUrl: string = 'https://api.cdnjs.com/libraries';
-  queryUrl: string = '?search=';
+  baseUrl: string = 'https://pokeapi.co/api/v2/pokemon/';
+  queryUrl: string = '';
 
   constructor(private http: Http) { }
 

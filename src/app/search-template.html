@@ -7,14 +7,44 @@
 	</div>
 </main>
 
-<div class="cards-pokemon">
-	<section>
-	<ul *ngIf="results">
-		<li *ngFor="let result of results | slice:0:9">
-			<a href="{{ result.latest }}" target="_blank">
-				{{ result.name }}
-			</a>
-		</li>
-	</ul>
-	</section>
-</div>
+<button (click)="verObj()">ver obj</button>
+
+{{resultadoPokemon.name}}
+{{resultadoPokemon.id}}
+{{resultadoPokemon.base_experience}}
+
+<!-- <section>
+
+    <div class="label">
+      {{pokemon.name}}
+    </div>
+    <div class="label">
+      {{pokemon.id}}
+    </div>
+    <div class="label">
+      {{pokemon.base_experience}}
+    </div>
+
+    <div *ngIf="premiado(pokemon.name)">
+      <section id="twelve-point-star"></section>
+    </div>
+
+      <div class="pure-u-1-3">
+          <h4>Tipo</h4>
+          <ul>
+            <li *ngFor="let item of pokemon.types">
+              {{ item.type.name }}
+            </li>
+          </ul>
+
+      </div>
+      <div class="pure-u-1-3">
+          <h4>Habilidade</h4>
+          <ul>
+            <li *ngFor="let item of pokemon.abilities">
+              {{ item.ability.name }}
+            </li>
+          </ul>
+      </div>
+
+  </section> -->

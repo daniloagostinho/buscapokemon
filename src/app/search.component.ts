@@ -17,7 +17,7 @@ export class SearchComponent {
 
   @Output() clicouEmPesquisar: EventEmitter<any> = new EventEmitter();
 
-  results: Object;
+  resultadoPokemon = [];
   searchTerm$ = new Subject<string>();
 
   constructor(
@@ -28,9 +28,13 @@ export class SearchComponent {
     });
 
     this.realTimeBusca.search(this.searchTerm$)
-    .subscribe(results => {
-      this.results = results.results;
-    });
+    .subscribe(hero => {
+      this.resultadoPokemon = hero;
+    });  
+  }
+
+  verObj() {
+    console.log('valor do objeto: ', this.resultadoPokemon);
   }
 
   quandoPrecionarEnter(event) {
