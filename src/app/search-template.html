@@ -1,18 +1,43 @@
 <main>
-	<div class="center-inputs" [formGroup]="formGroup" novalidate>
-		<input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" 
-		(keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
-		 [(ngModel)]="textoPesquisadoModel">
-		<button (click)="quandoClicarPesquisar($event)">Buscar</button>
-	</div>
+  <div class="center-inputs" [formGroup]="formGroup" novalidate>
+    <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
+      [(ngModel)]="textoPesquisadoModel">
+    <button (click)="quandoClicarPesquisar($event)">Buscar</button>
+  </div>
 </main>
 
 <button (click)="verObj()">ver obj</button>
 
-{{resultadoPokemon.name}}
-{{resultadoPokemon.id}}
-{{resultadoPokemon.base_experience}}
+<div class="cards-pokemon" *ngIf="resultadoPokemon">
 
+    <img
+      class="pure-img"
+      src="{{resultadoPokemon.sprites.front_default}}"
+      alt="Sprite de {{ resultadoPokemon.name }}">
+
+  <section>
+    <div class="label"  *ngIf="resultadoPokemon.name">
+      {{resultadoPokemon.name}} 
+    </div>
+    <div class="label" *ngIf="resultadoPokemon.id">
+      {{resultadoPokemon.id}} 
+    </div>
+    <div class="label">
+      {{resultadoPokemon.base_experience}}
+    </div>
+    <ul>
+      <li *ngFor="let resultado of resultadoPokemon.types">
+        {{ resultado.type.name }}
+      </li>
+    </ul>
+
+    <ul>
+      <li *ngFor="let resultado of resultadoPokemon.abilities">
+        {{ resultado.ability.name }}
+      </li>
+    </ul>
+  </section>
+</div>
 <!-- <section>
 
     <div class="label">
