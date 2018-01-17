@@ -1,10 +1,13 @@
 <main>
   <div class="center-inputs" [formGroup]="formGroup" novalidate>
-    <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
+    <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" 
+    (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
       [(ngModel)]="textoPesquisadoModel">
     <button (click)="quandoClicarPesquisar($event)">Buscar</button>
   </div>
 </main>
+
+<div *ngIf="isLoading  && clicado" style="text-align: center; margin-top: 50px;">C A R R E G A N D O . . .</div>
 <!-- 
 <button (click)="verObj()">ver obj</button> -->
 
@@ -22,9 +25,9 @@
     <div class="label" *ngIf="resultadoPokemon.id">
       {{resultadoPokemon.id}} 
     </div>
-    <div class="label">
+    <!-- <div class="label">
       {{resultadoPokemon.base_experience}}
-    </div>
+    </div> -->
     <!-- <ul>
       <li *ngFor="let resultado of resultadoPokemon.types">
         {{ resultado.type.name }}

@@ -20,6 +20,9 @@ export class SearchComponent {
   resultadoPokemon = [];
   searchTerm$ = new Subject<string>();
 
+  clicado: boolean = false;
+  isLoading: boolean = false;
+
   constructor(
     private fb: FormBuilder,
     private realTimeBusca: RealTimeService) {
@@ -29,6 +32,7 @@ export class SearchComponent {
 
     this.realTimeBusca.search(this.searchTerm$)
     .subscribe(hero => {
+      this.isLoading = false;
       this.resultadoPokemon = hero;
     });  
   }
@@ -39,7 +43,8 @@ export class SearchComponent {
 
   quandoPrecionarEnter(event) {
     const enterKey = event.keyCode;
-
+    this.isLoading = true;
+    this.clicado = true;
     if ( enterKey == 13 ) {
       console.log('vc digitou ENTER');
       this.clicouEmPesquisar.emit(this.textoPesquisadoModel);

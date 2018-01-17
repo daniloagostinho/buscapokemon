@@ -1,4 +1,4 @@
-import { NgModule }      from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
@@ -10,6 +10,8 @@ import { BuscarPokemonService } from './services/BuscarPokemon.service';
 import { HttpModule } from '@angular/http';
 import { RealTimeModule } from './real-time.module';
 import { RealTimeService } from '../real-time.service';
+import { FooterModule } from './footer.module';
+
 
 
 @NgModule({
@@ -19,13 +21,15 @@ import { RealTimeService } from '../real-time.service';
       SearchModule,
       PokemonCardModule,
       HttpModule,
-      RealTimeModule
+      RealTimeModule,
+      FooterModule
     ],
   declarations: [ AppComponent ],
   providers: [
     BuscarPokemonService,
     RealTimeService
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
