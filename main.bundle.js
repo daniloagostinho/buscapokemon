@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ "../../../../../src/app/app-template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header></header>\r\n\r\n<a href=\"https://github.com/daniloagostinho/buscapokemon\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\"></a>\r\n\r\n<div>\r\n  <search (clicouEmPesquisar)=\"pesquisarPokemon($event)\"></search>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center;\">C A R R E G A N D O . . .</div>\r\n\r\n<pokemon-card *ngIf=\"!isLoading && clicado\" [pokemon]=\"pokemonPesquisado\"></pokemon-card>\r\n\r\n<footer>\r\n\t<nav class=\"link-footer\">\r\n\t<ul>\r\n\t\t<li><p>Desenvolvido com muito ♥ por <a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a></p></li>\r\n\t\t<li><p>Mentores do projeto <a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a></p></li>\r\n\t\t<li><p><a href=\"https://github.com/cod3rkane\" target=\"_blank\">Cod3r Kane</a></p></li>\r\n\t</ul>\r\n\t</nav>\r\n</footer>\r\n\r\n"
+module.exports = "<header></header>\r\n\r\n<a href=\"https://github.com/daniloagostinho/buscapokemon\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\"></a>\r\n\r\n<div>\r\n  <search (clicouEmPesquisar)=\"pesquisarPokemon($event)\"></search>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center; margin-top: 50px;\">C A R R E G A N D O . . .</div>\r\n\r\n<pokemon-card *ngIf=\"!isLoading && clicado\" [pokemon]=\"pokemonPesquisado\"></pokemon-card>\r\n\r\n\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -60,7 +60,7 @@ var AppComponent = (function () {
         });
     };
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'my-app',
             template: __webpack_require__("../../../../../src/app/app-template.html"),
             styles: [__webpack_require__("../../../../../src/app/app.css")]
@@ -82,7 +82,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "footer {\r\n\twidth: 400px;\r\n\tdisplay: block;\r\n\tmargin:0 auto;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\nfooter p {\r\n\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    color: #27397e;\r\n    text-align: center;\r\n}\r\n\r\nfooter a {\r\n\ttext-decoration: none;\r\n\tcolor: #fdbf0c;\r\n}\r\n\r\nfooter a:hover {\r\n\ttext-decoration: underline;\r\n}\r\n\r\nnav {\r\n\tmargin-top: 60px;\r\n}\r\n\r\nli {\r\n\tlist-style: none;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -107,6 +107,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__real_time_module__ = __webpack_require__("../../../../../src/app/real-time.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__real_time_service__ = __webpack_require__("../../../../../src/real-time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_module__ = __webpack_require__("../../../../../src/app/footer.module.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -123,24 +124,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__header_module__["a" /* HeaderModule */],
                 __WEBPACK_IMPORTED_MODULE_4__search_module__["a" /* SearchModule */],
                 __WEBPACK_IMPORTED_MODULE_5__pokemon_card_module__["a" /* PokemonCardModule */],
                 __WEBPACK_IMPORTED_MODULE_7__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_8__real_time_module__["a" /* RealTimeModule */]
+                __WEBPACK_IMPORTED_MODULE_8__real_time_module__["a" /* RealTimeModule */],
+                __WEBPACK_IMPORTED_MODULE_10__footer_module__["a" /* FooterModule */]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__services_BuscarPokemon_service__["a" /* BuscarPokemonService */],
                 __WEBPACK_IMPORTED_MODULE_9__real_time_service__["a" /* RealTimeService */]
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -182,7 +186,7 @@ var RealTimeComponent = (function () {
         });
     }
     RealTimeComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-real-time',
             template: __webpack_require__("../../../../../src/app/teample-real-time.html"),
             styles: [__webpack_require__("../../../../../src/app/footer.css")],
@@ -215,6 +219,36 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ "../../../../../src/app/footer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    FooterComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-footer',
+            template: __webpack_require__("../../../../../src/app/footer.template.html"),
+            styles: [__webpack_require__("../../../../../src/app/footer.css")]
+        })
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/footer.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -223,13 +257,54 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "footer {\r\n\twidth: 400px;\r\n\tdisplay: block;\r\n\tmargin:0 auto;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\nfooter p {\r\n\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    color: #27397e;\r\n    text-align: center;\r\n}\r\n\r\nfooter a {\r\n\ttext-decoration: none;\r\n\tcolor: #fdbf0c;\r\n}\r\n\r\nfooter a:hover {\r\n\ttext-decoration: underline;\r\n}\r\n\r\nnav {\r\n\tmargin-top: 60px;\r\n}\r\n\r\nli {\r\n\tlist-style: none;\r\n}\r\n\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var FooterModule = (function () {
+    function FooterModule() {
+    }
+    FooterModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
+            exports: [__WEBPACK_IMPORTED_MODULE_2__footer_component__["a" /* FooterComponent */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__footer_component__["a" /* FooterComponent */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]]
+        })
+    ], FooterModule);
+    return FooterModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer.template.html":
+/***/ (function(module, exports) {
+
+module.exports = "<footer>\r\n\t<nav class=\"link-footer\">\r\n\t\t<ul>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Desenvolvido com muito ♥ por\r\n\t\t\t\t\t<a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Mentor do projeto\r\n\t\t\t\t\t<a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\r\n\t\t<p>\tConteúdo e design foi inspirado em <a href=\"https://www.pokemon.com/br/pokedex/\">&copy; Pokémon - Pokedex</a></p>\r\n\t</nav>\r\n\r\n\t\r\n\r\n</footer>"
 
 /***/ }),
 
@@ -258,7 +333,7 @@ var HeaderComponent = (function () {
         this.logoUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png';
     }
     HeaderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'header',
             template: __webpack_require__("../../../../../src/app/header-template.html"),
             styles: [__webpack_require__("../../../../../src/app/header.css")]
@@ -310,7 +385,7 @@ var HeaderModule = (function () {
     function HeaderModule() {
     }
     HeaderModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             exports: [__WEBPACK_IMPORTED_MODULE_2__header_component__["a" /* HeaderComponent */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__header_component__["a" /* HeaderComponent */]],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]]
@@ -342,7 +417,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var OpcoesImagemDirective = (function () {
     function OpcoesImagemDirective(el) {
         this.el = el;
-        this.alerta = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.alerta = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* EventEmitter */]();
     }
     OpcoesImagemDirective.prototype.onMouseEnter = function () {
         console.log(this.pokemon);
@@ -355,28 +430,28 @@ var OpcoesImagemDirective = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], OpcoesImagemDirective.prototype, "borda", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Output */])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* EventEmitter */])
     ], OpcoesImagemDirective.prototype, "alerta", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], OpcoesImagemDirective.prototype, "pokemon", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* HostListener */])('mouseenter'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* HostListener */])('mouseenter'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], OpcoesImagemDirective.prototype, "onMouseEnter", null);
     OpcoesImagemDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Directive */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* Directive */])({
             selector: '[opt-imagem]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ElementRef */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], OpcoesImagemDirective);
     return OpcoesImagemDirective;
 }());
@@ -418,11 +493,11 @@ var PokemonCardComponent = (function () {
         return false;
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", Object)
     ], PokemonCardComponent.prototype, "pokemon", void 0);
     PokemonCardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'pokemon-card',
             template: __webpack_require__("../../../../../src/app/pokemon-card-template.html"),
             styles: [__webpack_require__("../../../../../src/app/card.css")]
@@ -458,7 +533,7 @@ var PokemonCardModule = (function () {
     function PokemonCardModule() {
     }
     PokemonCardModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
             exports: [__WEBPACK_IMPORTED_MODULE_2__pokemon_card_component__["a" /* PokemonCardComponent */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__pokemon_card_component__["a" /* PokemonCardComponent */], __WEBPACK_IMPORTED_MODULE_3__opcoes_imagem_directive__["a" /* OpcoesImagemDirective */]]
@@ -492,7 +567,7 @@ var RealTimeModule = (function () {
     function RealTimeModule() {
     }
     RealTimeModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__busca_real_time_component__["a" /* RealTimeComponent */]],
             exports: [__WEBPACK_IMPORTED_MODULE_2__busca_real_time_component__["a" /* RealTimeComponent */]]
@@ -508,7 +583,7 @@ var RealTimeModule = (function () {
 /***/ "../../../../../src/app/search-template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n  <div class=\"center-inputs\" [formGroup]=\"formGroup\" novalidate>\r\n    <input formControlName=\"textoPesquisado\" type=\"search\" placeholder=\"Pesquise seu Pokemon\" (keyup)=\"quandoPrecionarEnter($event); searchTerm$.next($event.target.value)\"\r\n      [(ngModel)]=\"textoPesquisadoModel\">\r\n    <button (click)=\"quandoClicarPesquisar($event)\">Buscar</button>\r\n  </div>\r\n</main>\r\n<!-- \r\n<button (click)=\"verObj()\">ver obj</button> -->\r\n\r\n<div class=\"cards-pokemon\" *ngIf=\"resultadoPokemon\">\r\n\r\n    <img\r\n      class=\"pure-img\"\r\n      src=\"{{resultadoPokemon.sprites.front_default}}\"\r\n      alt=\"Sprite de {{ resultadoPokemon.name }}\">\r\n\r\n  <section>\r\n    <div class=\"label\"  *ngIf=\"resultadoPokemon.name\">\r\n      {{resultadoPokemon.name}} \r\n    </div>\r\n    <div class=\"label\" *ngIf=\"resultadoPokemon.id\">\r\n      {{resultadoPokemon.id}} \r\n    </div>\r\n    <div class=\"label\">\r\n      {{resultadoPokemon.base_experience}}\r\n    </div>\r\n    <!-- <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.types\">\r\n        {{ resultado.type.name }}\r\n      </li>\r\n    </ul> -->\r\n\r\n    <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.abilities\">\r\n        {{ resultado.ability.name }}\r\n      </li>\r\n    </ul>\r\n  </section>\r\n</div>\r\n<!-- <section>\r\n\r\n    <div class=\"label\">\r\n      {{pokemon.name}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.id}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.base_experience}}\r\n    </div>\r\n\r\n    <div *ngIf=\"premiado(pokemon.name)\">\r\n      <section id=\"twelve-point-star\"></section>\r\n    </div>\r\n\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Tipo</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.types\">\r\n              {{ item.type.name }}\r\n            </li>\r\n          </ul>\r\n\r\n      </div>\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Habilidade</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.abilities\">\r\n              {{ item.ability.name }}\r\n            </li>\r\n          </ul>\r\n      </div>\r\n\r\n  </section> -->"
+module.exports = "<main>\r\n  <div class=\"center-inputs\" [formGroup]=\"formGroup\" novalidate>\r\n    <input formControlName=\"textoPesquisado\" type=\"search\" placeholder=\"Pesquise seu Pokemon\" \r\n    (keyup)=\"quandoPrecionarEnter($event); searchTerm$.next($event.target.value)\"\r\n      [(ngModel)]=\"textoPesquisadoModel\">\r\n    <button (click)=\"quandoClicarPesquisar($event)\">Buscar</button>\r\n  </div>\r\n</main>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center; margin-top: 50px;\">C A R R E G A N D O . . .</div>\r\n<!-- \r\n<button (click)=\"verObj()\">ver obj</button> -->\r\n\r\n<div class=\"cards-pokemon\" *ngIf=\"resultadoPokemon\">\r\n\r\n    <img\r\n      class=\"pure-img\"\r\n      src=\"{{resultadoPokemon.sprites.front_default}}\"\r\n      alt=\"Sprite de {{ resultadoPokemon.name }}\">\r\n\r\n  <section>\r\n    <div class=\"label\"  *ngIf=\"resultadoPokemon.name\">\r\n      {{resultadoPokemon.name}} \r\n    </div>\r\n    <div class=\"label\" *ngIf=\"resultadoPokemon.id\">\r\n      {{resultadoPokemon.id}} \r\n    </div>\r\n    <!-- <div class=\"label\">\r\n      {{resultadoPokemon.base_experience}}\r\n    </div> -->\r\n    <!-- <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.types\">\r\n        {{ resultado.type.name }}\r\n      </li>\r\n    </ul> -->\r\n\r\n    <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.abilities\">\r\n        {{ resultado.ability.name }}\r\n      </li>\r\n    </ul>\r\n  </section>\r\n</div>\r\n<!-- <section>\r\n\r\n    <div class=\"label\">\r\n      {{pokemon.name}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.id}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.base_experience}}\r\n    </div>\r\n\r\n    <div *ngIf=\"premiado(pokemon.name)\">\r\n      <section id=\"twelve-point-star\"></section>\r\n    </div>\r\n\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Tipo</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.types\">\r\n              {{ item.type.name }}\r\n            </li>\r\n          </ul>\r\n\r\n      </div>\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Habilidade</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.abilities\">\r\n              {{ item.ability.name }}\r\n            </li>\r\n          </ul>\r\n      </div>\r\n\r\n  </section> -->"
 
 /***/ }),
 
@@ -539,14 +614,17 @@ var SearchComponent = (function () {
         var _this = this;
         this.fb = fb;
         this.realTimeBusca = realTimeBusca;
-        this.clicouEmPesquisar = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.clicouEmPesquisar = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* EventEmitter */]();
         this.resultadoPokemon = [];
         this.searchTerm$ = new __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__["a" /* Subject */]();
+        this.clicado = false;
+        this.isLoading = false;
         this.formGroup = this.fb.group({
             textoPesquisado: ['']
         });
         this.realTimeBusca.search(this.searchTerm$)
             .subscribe(function (hero) {
+            _this.isLoading = false;
             _this.resultadoPokemon = hero;
         });
     }
@@ -555,6 +633,8 @@ var SearchComponent = (function () {
     };
     SearchComponent.prototype.quandoPrecionarEnter = function (event) {
         var enterKey = event.keyCode;
+        this.isLoading = true;
+        this.clicado = true;
         if (enterKey == 13) {
             console.log('vc digitou ENTER');
             this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
@@ -564,11 +644,11 @@ var SearchComponent = (function () {
         this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Output */])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* EventEmitter */])
     ], SearchComponent.prototype, "clicouEmPesquisar", void 0);
     SearchComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'search',
             moduleId: module.i,
             template: __webpack_require__("../../../../../src/app/search-template.html"),
@@ -625,7 +705,7 @@ var SearchModule = (function () {
     function SearchModule() {
     }
     SearchModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* ReactiveFormsModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_3__search_component__["a" /* SearchComponent */]],
             exports: [__WEBPACK_IMPORTED_MODULE_3__search_component__["a" /* SearchComponent */]]
@@ -670,7 +750,7 @@ var BuscarPokemonService = (function () {
         return result;
     };
     BuscarPokemonService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
     ], BuscarPokemonService);
     return BuscarPokemonService;
@@ -717,7 +797,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
@@ -769,7 +849,7 @@ var RealTimeService = (function () {
             .map(function (res) { return res.json(); });
     };
     RealTimeService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
     ], RealTimeService);
     return RealTimeService;
