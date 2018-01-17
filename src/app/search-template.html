@@ -5,8 +5,8 @@
     <button (click)="quandoClicarPesquisar($event)">Buscar</button>
   </div>
 </main>
-
-<button (click)="verObj()">ver obj</button>
+<!-- 
+<button (click)="verObj()">ver obj</button> -->
 
 <div class="cards-pokemon" *ngIf="resultadoPokemon">
 
@@ -25,11 +25,11 @@
     <div class="label">
       {{resultadoPokemon.base_experience}}
     </div>
-    <ul>
+    <!-- <ul>
       <li *ngFor="let resultado of resultadoPokemon.types">
         {{ resultado.type.name }}
       </li>
-    </ul>
+    </ul> -->
 
     <ul>
       <li *ngFor="let resultado of resultadoPokemon.abilities">
