@@ -1,38 +1,25 @@
 <main>
   <div class="center-inputs" [formGroup]="formGroup" novalidate>
-    <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" 
-    (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
+    <input formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
       [(ngModel)]="textoPesquisadoModel">
     <button (click)="quandoClicarPesquisar($event)">Buscar</button>
   </div>
 </main>
 
 <div *ngIf="isLoading  && clicado" style="text-align: center; margin-top: 50px;">C A R R E G A N D O . . .</div>
-<!-- 
-<button (click)="verObj()">ver obj</button> -->
 
 <div class="cards-pokemon" *ngIf="resultadoPokemon">
-
-    <img
-      class="pure-img"
-      src="{{resultadoPokemon.sprites.front_default}}"
-      alt="Sprite de {{ resultadoPokemon.name }}">
-
+  <figure>
+    <img class="pure-img" src="{{resultadoPokemon.sprites.front_default}}" alt="Sprite de {{ resultadoPokemon.name }}">
+  </figure>
   <section>
-    <div class="label"  *ngIf="resultadoPokemon.name">
-      {{resultadoPokemon.name}} 
-    </div>
-    <div class="label" *ngIf="resultadoPokemon.id">
-      {{resultadoPokemon.id}} 
-    </div>
-    <!-- <div class="label">
-      {{resultadoPokemon.base_experience}}
-    </div> -->
-    <!-- <ul>
+    {{resultadoPokemon.name}} {{resultadoPokemon.id}}
+    {{resultadoPokemon.base_experience}}
+    <ul>
       <li *ngFor="let resultado of resultadoPokemon.types">
         {{ resultado.type.name }}
       </li>
-    </ul> -->
+    </ul>
 
     <ul>
       <li *ngFor="let resultado of resultadoPokemon.abilities">
@@ -41,38 +28,3 @@
     </ul>
   </section>
 </div>
-<!-- <section>
-
-    <div class="label">
-      {{pokemon.name}}
-    </div>
-    <div class="label">
-      {{pokemon.id}}
-    </div>
-    <div class="label">
-      {{pokemon.base_experience}}
-    </div>
-
-    <div *ngIf="premiado(pokemon.name)">
-      <section id="twelve-point-star"></section>
-    </div>
-
-      <div class="pure-u-1-3">
-          <h4>Tipo</h4>
-          <ul>
-            <li *ngFor="let item of pokemon.types">
-              {{ item.type.name }}
-            </li>
-          </ul>
-
-      </div>
-      <div class="pure-u-1-3">
-          <h4>Habilidade</h4>
-          <ul>
-            <li *ngFor="let item of pokemon.abilities">
-              {{ item.ability.name }}
-            </li>
-          </ul>
-      </div>
-
-  </section> -->

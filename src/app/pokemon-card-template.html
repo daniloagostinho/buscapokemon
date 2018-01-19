@@ -9,15 +9,9 @@
 
   <section>
 
-    <div class="label">
       {{pokemon.name}}
-    </div>
-    <div class="label">
       {{pokemon.id}}
-    </div>
-    <div class="label">
       {{pokemon.base_experience}}
-    </div>
 
     <div *ngIf="premiado(pokemon.name)">
       <section id="twelve-point-star"></section>
