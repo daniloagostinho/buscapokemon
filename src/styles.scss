@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+main {
+	max-width: 630px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+	display: flex;
+  justify-content: center;
+}
+
+.center-inputs {
+		display: flex;
+}
+
+input {
+	padding: 15px;
+	width: 600px;
+}
+
+.pure-button {
+  width: 120px;
+  position: relative;
+  left: 20px;
+}
+
+// card pokemon #busca
+#cards-pokemon-busca {
+  width: 17%;
+  border-radius: 10px;
+  display: block;
+  margin: 75px 346px;
+  background-color: #F2F2F2;
+
+  figure {
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  section {
+    ul {
+      li {
+          list-style: none;
+
+          margin-left: 0;
+          position: relative;
+          left: -41px;
+      }
+    }
+
+    strong {
+      text-align: left;
+    }
+
+    .button-secondary {
+      background: rgb(66, 184, 221);
+      font-size: 11px;
+      width: 70px;
+    }
+
+    .button-warning {
+      background: rgb(223, 117, 20); /* this is an orange */
+      font-size: 11px;
+      width: 80px;
+    }
+
+  }
+}

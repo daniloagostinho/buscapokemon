@@ -1,39 +1,23 @@
-<div class="cards-pokemon">
+<div id="cards-pokemon-busca">
+  <figure>
   <img
   opt-imagem
    class="pure-img"
     [borda]="'1px solid #fff'"
     src="{{pokemon.sprites.front_default}}"
     alt="Sprite de {{ pokemon.name }}">
-
+  </figure>
 
   <section>
 
-      {{pokemon.name}}
-      {{pokemon.id}}
-      {{pokemon.base_experience}}
-
-    <div *ngIf="premiado(pokemon.name)">
-      <section id="twelve-point-star"></section>
-    </div>
-
-      <div class="pure-u-1-3">
-          <h4>Tipo</h4>
+      <h2>{{pokemon.name}}</h2>
+      <strong>Experiência básica: </strong>{{pokemon.base_experience}}
+        <strong>Categoria:</strong>
           <ul>
             <li *ngFor="let item of pokemon.types">
-              {{ item.type.name }}
+                <button class="button-secondary pure-button">{{ item.type.name }}</button>
             </li>
           </ul>
-
-      </div>
-      <div class="pure-u-1-3">
-          <h4>Habilidade</h4>
-          <ul>
-            <li *ngFor="let item of pokemon.abilities">
-              {{ item.ability.name }}
-            </li>
-          </ul>
-      </div>
 
   </section>
 
