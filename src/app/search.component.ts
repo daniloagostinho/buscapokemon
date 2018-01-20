@@ -37,10 +37,6 @@ export class SearchComponent {
     });
   }
 
-  verObj() {
-    console.log('valor do objeto: ', this.resultadoPokemon);
-  }
-
   quandoPrecionarEnter(event) {
     const enterKey = event.keyCode;
     this.isLoading = true;
