@@ -6,7 +6,6 @@ import { RealTimeService } from '../real-time.service';
 @Component({
 	selector: 'app-real-time',
 	templateUrl: './teample-real-time.html',
-    styleUrls: ['./footer.css'],
     providers: [RealTimeService]
 })
 

@@ -14,7 +14,7 @@ export interface Pokemon {
 @Component({
   selector: 'pokemon-card',
   templateUrl: './pokemon-card-template.html',
-  styleUrls: ['./card.css']
+  styleUrls: ['./card.scss']
 })
 export class PokemonCardComponent {
   @Input() pokemon: Pokemon;

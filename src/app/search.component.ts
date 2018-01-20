@@ -9,7 +9,7 @@ import { Subject } from 'rxjs/Subject';
   selector: 'search',
   moduleId: module.id,
   templateUrl: './search-template.html',
-  styleUrls: ['./search.css']
+  styleUrls: ['./search.scss']
 })
 export class SearchComponent {
   textoPesquisadoModel: string;
@@ -34,7 +34,7 @@ export class SearchComponent {
     .subscribe(hero => {
       this.isLoading = false;
       this.resultadoPokemon = hero;
-    });  
+    });
   }
 
   verObj() {
