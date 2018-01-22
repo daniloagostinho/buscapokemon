@@ -63,7 +63,7 @@ var AppComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'my-app',
             template: __webpack_require__("../../../../../src/app/app-template.html"),
-            styles: [__webpack_require__("../../../../../src/app/app.css")]
+            styles: [__webpack_require__("../../../../../src/app/app.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_BuscarPokemon_service__["a" /* BuscarPokemonService */]])
     ], AppComponent);
@@ -71,24 +71,6 @@ var AppComponent = (function () {
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/app.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -155,6 +137,24 @@ var AppModule = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/app.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ "../../../../../src/app/busca-real-time.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -189,7 +189,6 @@ var RealTimeComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-real-time',
             template: __webpack_require__("../../../../../src/app/teample-real-time.html"),
-            styles: [__webpack_require__("../../../../../src/app/footer.css")],
             providers: [__WEBPACK_IMPORTED_MODULE_2__real_time_service__["a" /* RealTimeService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__real_time_service__["a" /* RealTimeService */]])
@@ -201,7 +200,7 @@ var RealTimeComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/card.css":
+/***/ "../../../../../src/app/card.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -209,7 +208,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".cards-pokemon {\r\n\tposition: relative;\r\n  border: 2px solid #1e275b;\r\n\r\n\ttop: 100px;\r\n\r\n\tmargin: 0 auto;\r\n\twidth: 600px;\r\n\tpadding: 10px;\r\n\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.cards-pokemon h3, p {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n}\r\n\r\n.cards-pokemon  p {\r\n  max-width: 500px;\r\n}\r\n\r\nimg {\r\n\tfloat: left;\r\n\twidth: 25%;\r\n}\r\n\r\n.label {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n  position: relative;\r\n  width: 90px;\r\n  height: 31px;\r\n  border: 2px solid #1e275b;\r\n  bottom: 50px;\r\n  float: left;\r\n  margin: 5px;\r\n  margin-left: 49px;\r\n  text-align: center;\r\n  line-height: 2;\r\n  border-radius: 0 10px 0 0;\r\n}\r\n\r\n.label:nth-child(1):before {\r\n  content: 'Nome';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(2):before {\r\n  content: 'ID';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(3):before {\r\n  content: 'Experi\\EAncia';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n#twelve-point-star {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   position: absolute;\r\n   right: 0;\r\n\r\n}\r\n\r\n#twelve-point-star:before {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"Premiado!!\";\r\n   font-weight: bold;\r\n   font-size: 20px;\r\n   z-index: 9999;\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(30deg);\r\n   transform: rotate(30deg);\r\n\r\n}\r\n\r\n#twelve-point-star:after {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"\";\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(-30deg);\r\n   transform: rotate(-30deg);\r\n\r\n}\r\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -239,31 +238,13 @@ var FooterComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-footer',
             template: __webpack_require__("../../../../../src/app/footer.template.html"),
-            styles: [__webpack_require__("../../../../../src/app/footer.css")]
+            styles: [__webpack_require__("../../../../../src/app/footer.scss")]
         })
     ], FooterComponent);
     return FooterComponent;
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/footer.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "footer {\r\n\twidth: 400px;\r\n\tdisplay: block;\r\n\tmargin:0 auto;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\nfooter p {\r\n\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    color: #27397e;\r\n    text-align: center;\r\n}\r\n\r\nfooter a {\r\n\ttext-decoration: none;\r\n\tcolor: #fdbf0c;\r\n}\r\n\r\nfooter a:hover {\r\n\ttext-decoration: underline;\r\n}\r\n\r\nnav {\r\n\tmargin-top: 60px;\r\n}\r\n\r\nli {\r\n\tlist-style: none;\r\n}\r\n\r\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -301,10 +282,28 @@ var FooterModule = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/footer.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "footer {\n  width: 400px;\n  display: block;\n  margin: 0 auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n\nfooter p {\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  color: #27397e;\n  text-align: center; }\n\nfooter a {\n  text-decoration: none;\n  color: #fdbf0c; }\n\nfooter a:hover {\n  text-decoration: underline; }\n\nnav {\n  margin-top: 60px; }\n\nli {\n  list-style: none; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ "../../../../../src/app/footer.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<footer>\r\n\t<nav class=\"link-footer\">\r\n\t\t<ul>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Desenvolvido com muito ♥ por\r\n\t\t\t\t\t<a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Mentor do projeto\r\n\t\t\t\t\t<a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\r\n\t\t<p>\tConteúdo e design foi inspirado em <a href=\"https://www.pokemon.com/br/pokedex/\">&copy; Pokémon - Pokedex</a></p>\r\n\t</nav>\r\n\r\n\t\r\n\r\n</footer>"
+module.exports = "<footer>\r\n\t<nav class=\"link-footer\">\r\n\t\t<ul>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Desenvolvido com muito ♥ por\r\n\t\t\t\t\t<a href=\"http://github.com/DaniloAgostinho\" target=\"_blank\">Danilo Agostinho </a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<p>Mentor do projeto\r\n\t\t\t\t\t<a href=\"https://github.com/WendellAdriel\" target=\"_blank\">Wendell Adriel</a>\r\n\t\t\t\t</p>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\r\n\t\t<p>\tConteúdo e design foi inspirado em <a href=\"https://www.pokemon.com/br/pokedex/\">&copy;Pokémon - Pokedex</a></p>\r\n\t</nav>\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -336,31 +335,13 @@ var HeaderComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'header',
             template: __webpack_require__("../../../../../src/app/header-template.html"),
-            styles: [__webpack_require__("../../../../../src/app/header.css")]
+            styles: [__webpack_require__("../../../../../src/app/header.scss")]
         })
     ], HeaderComponent);
     return HeaderComponent;
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/header.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "section {\r\n\tmax-width: 900px;\r\n    height: 100%;\r\n    display: block;\r\n    margin: 0 auto;\r\n    padding-top: 150px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n\tposition: relative;\r\n    top: 20px;\t\r\n\tfont-size: 16px;\r\n\tfont-family: 'Archivo Black', sans-serif;\r\n}\r\n\r\n.logo {\r\n\tmax-width: 300px;\r\n\tdisplay: block;\r\n\tmargin: auto;\r\n}\r\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -395,6 +376,24 @@ var HeaderModule = (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "../../../../../src/app/header.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "section {\n  max-width: 900px;\n  height: 100%;\n  display: block;\n  margin: 0 auto;\n  padding-top: 150px; }\n\nh2 {\n  text-align: center;\n  position: relative;\n  top: 20px;\n  font-size: 16px;\n  font-family: 'Archivo Black', sans-serif; }\n\n.logo {\n  max-width: 300px;\n  display: block;\n  margin: auto; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -463,7 +462,7 @@ var OpcoesImagemDirective = (function () {
 /***/ "../../../../../src/app/pokemon-card-template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"cards-pokemon\">\r\n  <img\r\n  opt-imagem\r\n   class=\"pure-img\"\r\n    [borda]=\"'1px solid #fff'\"\r\n    src=\"{{pokemon.sprites.front_default}}\"\r\n    alt=\"Sprite de {{ pokemon.name }}\">\r\n\r\n\r\n  <section>\r\n\r\n    <div class=\"label\">\r\n      {{pokemon.name}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.id}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.base_experience}}\r\n    </div>\r\n\r\n    <div *ngIf=\"premiado(pokemon.name)\">\r\n      <section id=\"twelve-point-star\"></section>\r\n    </div>\r\n\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Tipo</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.types\">\r\n              {{ item.type.name }}\r\n            </li>\r\n          </ul>\r\n\r\n      </div>\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Habilidade</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.abilities\">\r\n              {{ item.ability.name }}\r\n            </li>\r\n          </ul>\r\n      </div>\r\n\r\n  </section>\r\n\r\n</div>\r\n\r\n\r\n"
+module.exports = "<div id=\"cards-pokemon-busca\">\r\n  <figure>\r\n  <img\r\n  opt-imagem\r\n   class=\"pure-img\"\r\n    [borda]=\"'1px solid #fff'\"\r\n    src=\"{{pokemon.sprites.front_default}}\"\r\n    alt=\"Sprite de {{ pokemon.name }}\">\r\n  </figure>\r\n\r\n  <section>\r\n\r\n      <h2>{{pokemon.name}}</h2>\r\n      <strong>Experiência básica: </strong>{{pokemon.base_experience}}\r\n        <strong>Categoria:</strong>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.types\">\r\n                <button class=\"button-secondary pure-button\">{{ item.type.name }}</button>\r\n            </li>\r\n          </ul>\r\n\r\n  </section>\r\n\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -500,7 +499,7 @@ var PokemonCardComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'pokemon-card',
             template: __webpack_require__("../../../../../src/app/pokemon-card-template.html"),
-            styles: [__webpack_require__("../../../../../src/app/card.css")]
+            styles: [__webpack_require__("../../../../../src/app/card.scss")]
         })
     ], PokemonCardComponent);
     return PokemonCardComponent;
@@ -583,7 +582,7 @@ var RealTimeModule = (function () {
 /***/ "../../../../../src/app/search-template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n  <div class=\"center-inputs\" [formGroup]=\"formGroup\" novalidate>\r\n    <input formControlName=\"textoPesquisado\" type=\"search\" placeholder=\"Pesquise seu Pokemon\" \r\n    (keyup)=\"quandoPrecionarEnter($event); searchTerm$.next($event.target.value)\"\r\n      [(ngModel)]=\"textoPesquisadoModel\">\r\n    <button (click)=\"quandoClicarPesquisar($event)\">Buscar</button>\r\n  </div>\r\n</main>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center; margin-top: 50px;\">C A R R E G A N D O . . .</div>\r\n<!-- \r\n<button (click)=\"verObj()\">ver obj</button> -->\r\n\r\n<div class=\"cards-pokemon\" *ngIf=\"resultadoPokemon\">\r\n\r\n    <img\r\n      class=\"pure-img\"\r\n      src=\"{{resultadoPokemon.sprites.front_default}}\"\r\n      alt=\"Sprite de {{ resultadoPokemon.name }}\">\r\n\r\n  <section>\r\n    <div class=\"label\"  *ngIf=\"resultadoPokemon.name\">\r\n      {{resultadoPokemon.name}} \r\n    </div>\r\n    <div class=\"label\" *ngIf=\"resultadoPokemon.id\">\r\n      {{resultadoPokemon.id}} \r\n    </div>\r\n    <!-- <div class=\"label\">\r\n      {{resultadoPokemon.base_experience}}\r\n    </div> -->\r\n    <!-- <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.types\">\r\n        {{ resultado.type.name }}\r\n      </li>\r\n    </ul> -->\r\n\r\n    <ul>\r\n      <li *ngFor=\"let resultado of resultadoPokemon.abilities\">\r\n        {{ resultado.ability.name }}\r\n      </li>\r\n    </ul>\r\n  </section>\r\n</div>\r\n<!-- <section>\r\n\r\n    <div class=\"label\">\r\n      {{pokemon.name}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.id}}\r\n    </div>\r\n    <div class=\"label\">\r\n      {{pokemon.base_experience}}\r\n    </div>\r\n\r\n    <div *ngIf=\"premiado(pokemon.name)\">\r\n      <section id=\"twelve-point-star\"></section>\r\n    </div>\r\n\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Tipo</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.types\">\r\n              {{ item.type.name }}\r\n            </li>\r\n          </ul>\r\n\r\n      </div>\r\n      <div class=\"pure-u-1-3\">\r\n          <h4>Habilidade</h4>\r\n          <ul>\r\n            <li *ngFor=\"let item of pokemon.abilities\">\r\n              {{ item.ability.name }}\r\n            </li>\r\n          </ul>\r\n      </div>\r\n\r\n  </section> -->"
+module.exports = "<main>\r\n    <form class=\"pure-form\">\r\n  <div class=\"center-inputs\" [formGroup]=\"formGroup\" novalidate>\r\n      <input class=\"pure-input-rounded\" class=\"pure-input-rounded\" formControlName=\"textoPesquisado\" type=\"search\" placeholder=\"Pesquise seu Pokemon\" (keyup)=\"quandoPrecionarEnter($event); searchTerm$.next($event.target.value)\"\r\n        [(ngModel)]=\"textoPesquisadoModel\">\r\n      <button (click)=\"quandoClicarPesquisar($event)\" class=\"pure-button\">Buscar</button>\r\n  </div>\r\n</form>\r\n</main>\r\n\r\n<div *ngIf=\"isLoading  && clicado\" style=\"text-align: center; margin-top: 50px;\">C A R R E G A N D O . . .</div>\r\n\r\n<div id=\"cards-pokemon-busca\" *ngIf=\"resultadoPokemon\">\r\n\r\n  <figure>\r\n    <img src=\"{{resultadoPokemon.sprites.front_default}}\" alt=\"Sprite de {{ resultadoPokemon.name }}\">\r\n  </figure>\r\n\r\n  <section>\r\n\r\n    <div *ngIf=\"resultadoPokemon.name\">\r\n        <h2>{{resultadoPokemon.name | uppercase}}</h2>\r\n    </div>\r\n\r\n\r\n    <div *ngIf=\"resultadoPokemon.base_experience\">\r\n        <strong>Experiência básica: </strong> {{resultadoPokemon.base_experience}}\r\n    </div>\r\n\r\n    <div *ngIf=\"resultadoPokemon.types\">\r\n        <strong>Categoria:</strong>\r\n\r\n        <ul>\r\n          <li *ngFor=\"let resultado of resultadoPokemon.types\">\r\n\r\n            <button class=\"button-secondary pure-button\">{{ resultado.type.name }}</button>\r\n          </li>\r\n        </ul>\r\n    </div>\r\n  </section>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -628,9 +627,6 @@ var SearchComponent = (function () {
             _this.resultadoPokemon = hero;
         });
     }
-    SearchComponent.prototype.verObj = function () {
-        console.log('valor do objeto: ', this.resultadoPokemon);
-    };
     SearchComponent.prototype.quandoPrecionarEnter = function (event) {
         var enterKey = event.keyCode;
         this.isLoading = true;
@@ -652,7 +648,7 @@ var SearchComponent = (function () {
             selector: 'search',
             moduleId: module.i,
             template: __webpack_require__("../../../../../src/app/search-template.html"),
-            styles: [__webpack_require__("../../../../../src/app/search.css")]
+            styles: [__webpack_require__("../../../../../src/app/search.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
             __WEBPACK_IMPORTED_MODULE_2__real_time_service__["a" /* RealTimeService */]])
@@ -661,24 +657,6 @@ var SearchComponent = (function () {
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/search.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "main {\r\n\tmax-width: 630px;\r\n  height: 100%;\r\n  margin: 0 auto;\r\n  padding-top: 50px;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n.center-inputs {\r\n\t\tdisplay: -webkit-box;\r\n\t\tdisplay: -ms-flexbox;\r\n\t\tdisplay: flex;\r\n}\r\n\r\ninput {\r\n\tpadding: 15px;\r\n\twidth: 335px;\r\n\tbackground: #fff;\r\n\tborder: 2px solid #1e275b;\r\n\tfont-size: 16px;\r\n}\r\n\r\nbutton {\r\n\tpadding: 15px;\r\n\twidth: 120px;\r\n\tborder: 2px solid #1e275b;\r\n\tfont-size: 16px;\r\n\tbackground: #fff;\r\n\tcursor: pointer;\r\n\tfont-weight: bold;\r\n\tcolor: #1d3c73;\r\n}\r\n\r\n.cards-pokemon {\r\n\tposition: relative;\r\n\r\n\ttop: 20px;\r\n\tmargin: 0 auto;\r\n\twidth: 600px;\r\n\tpadding: 10px;\r\n\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.cards-pokemon h3, p {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n}\r\n\r\n.cards-pokemon  p {\r\n  max-width: 500px;\r\n}\r\n\r\nimg {\r\n\tfloat: left;\r\n\twidth: 25%;\r\n}\r\n\r\n.label {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n  position: relative;\r\n  width: 90px;\r\n  height: 31px;\r\n  border: 2px solid #1e275b;\r\n  bottom: 50px;\r\n  float: left;\r\n  margin: 5px;\r\n  margin-left: 49px;\r\n  text-align: center;\r\n  line-height: 2;\r\n  border-radius: 0 10px 0 0;\r\n}\r\n\r\n.label:nth-child(1):before {\r\n  content: 'Nome';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(2):before {\r\n  content: 'ID';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n.label:nth-child(3):before {\r\n  content: 'Experi\\EAncia';\r\n  position: absolute;\r\n  bottom: 27px;\r\n  right: 0;\r\n  width: 60px;\r\n  height: 20px;\r\n  background: chocolate;\r\n  border-radius: 9px;\r\n  font-size: 10px;\r\n  font-weight: bold;\r\n  color: #fff;\r\n}\r\n\r\n#twelve-point-star {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   position: absolute;\r\n   right: 0;\r\n\r\n}\r\n\r\n#twelve-point-star:before {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"Premiado!!\";\r\n   font-weight: bold;\r\n   font-size: 20px;\r\n   z-index: 9999;\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(30deg);\r\n   transform: rotate(30deg);\r\n\r\n}\r\n\r\n#twelve-point-star:after {\r\n   height: 100px;\r\n   width: 100px;\r\n   background: #FF0033;\r\n   content:\"\";\r\n   position: absolute;\r\n   /* Rotação */\r\n   -webkit-transform: rotate(-30deg);\r\n   transform: rotate(-30deg);\r\n\r\n}\r\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -715,6 +693,24 @@ var SearchModule = (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "../../../../../src/app/search.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
