@@ -43,6 +43,7 @@ export class SearchComponent {
     this.clicado = true;
     if ( enterKey == 13 ) {
       console.log('vc digitou ENTER');
+      console.log(this.textoPesquisadoModel);
       this.clicouEmPesquisar.emit(this.textoPesquisadoModel);
     }
 
