@@ -1,11 +1,11 @@
 <main>
-    <form class="pure-form">
-  <div class="center-inputs" [formGroup]="formGroup" novalidate>
-      <input class="pure-input-rounded" class="pure-input-rounded" formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon" (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)"
-        [(ngModel)]="textoPesquisadoModel">
+  <form class="pure-form">
+    <div class="center-inputs" [formGroup]="formGroup" novalidate>
+      <input class="pure-input-rounded" class="pure-input-rounded" formControlName="textoPesquisado" type="search" placeholder="Pesquise seu Pokemon"
+        (keyup)="quandoPrecionarEnter($event); searchTerm$.next($event.target.value)" [(ngModel)]="textoPesquisadoModel">
       <button (click)="quandoClicarPesquisar($event)" class="pure-button">Buscar</button>
-  </div>
-</form>
+    </div>
+  </form>
 </main>
 
 <div *ngIf="isLoading  && clicado" style="text-align: center; margin-top: 50px;">C A R R E G A N D O . . .</div>
@@ -19,23 +19,23 @@
   <section>
 
     <div *ngIf="resultadoPokemon.name">
-        <h2>{{resultadoPokemon.name | uppercase}}</h2>
+      <h2>{{resultadoPokemon.name | uppercase}}</h2>
     </div>
 
 
     <div *ngIf="resultadoPokemon.base_experience">
-        <strong>Experiência básica: </strong> {{resultadoPokemon.base_experience}}
+      <strong>Experiência básica: </strong> {{resultadoPokemon.base_experience}}
     </div>
 
     <div *ngIf="resultadoPokemon.types">
-        <strong>Categoria:</strong>
+      <strong>Categoria:</strong>
 
-        <ul>
-          <li *ngFor="let resultado of resultadoPokemon.types">
+      <ul>
+        <li *ngFor="let resultado of resultadoPokemon.types">
 
-            <button class="button-secondary pure-button">{{ resultado.type.name }}</button>
-          </li>
-        </ul>
+          <button class="button-secondary pure-button">{{ resultado.type.name }}</button>
+        </li>
+      </ul>
     </div>
   </section>
 </div>
