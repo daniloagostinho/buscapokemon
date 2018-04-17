@@ -10,7 +10,7 @@ git clone https://github.com/daniloagostinho/buscapokemon.git
 ### Acesse a pasta do projeto:
 
 ```bash 
-cd buscapokemon
+cd buscapokemon/
 ```
 
 ### Sirva o projeto:
