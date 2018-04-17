@@ -22,3 +22,5 @@ ng s
 ```bash 
 http://localhost:4200/
 ```
+
+<img src="https://media.giphy.com/media/feme0QMFDsJYzRoMWt/giphy.gif">
